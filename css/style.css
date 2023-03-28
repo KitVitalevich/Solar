@@ -197,7 +197,7 @@ h6 {
 }
 
 .no-webp .header{
-  background: url("img/header/header-bg.jpg") center/cover no-repeat; }
+  background: url("../img/header/header-bg.jpg") center/cover no-repeat; }
 
 .header {
   min-height: 100vh;
@@ -346,7 +346,7 @@ h6 {
 }
 
 .no-webp .footer{
-  background: url("img/footer/footer-bg.jpg") 0 0 no-repeat; }
+  background: url("../img/footer/footer-bg.jpg") 0 0 no-repeat; }
 
 .footer {
   margin: 9.375rem 0px 0px 0px;
@@ -855,7 +855,7 @@ h6 {
 }
 
 .no-webp .quote__background{
-  background: url("img/quote/quote.jpg") center no-repeat; }
+  background: url("../img/quote/quote.jpg") center no-repeat; }
 
 .quote__background {
   display: -webkit-box;
@@ -1758,8 +1758,8 @@ h6 {
   }
 }
 
-.webp .header{ background: url(img/header/header-bg.webp) center/cover no-repeat; }
+.webp .header{ background: url(../img/header/header-bg.webp) center/cover no-repeat; }
 
-.webp .footer{ background: url(img/footer/footer-bg.webp) 0 0 no-repeat; }
+.webp .footer{ background: url(../img/footer/footer-bg.webp) 0 0 no-repeat; }
 
-.webp .quote__background{ background: url(img/quote/quote.webp) center no-repeat; }
+.webp .quote__background{ background: url(../img/quote/quote.webp) center no-repeat; }
