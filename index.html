@@ -1,179 +1,535 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230328160044">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «solar»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «solar»</h1>
-		<div class="rootpage__info">
-			Солнечная электростанция: "Заленый тариф для дома и бизнеса"
-		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-		</ol>
-		<!-- <h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol> -->
-		<!-- <div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад (а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div> -->
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:kit.vitalevich@yandex.ru">kit.vitalevich@yandex.ru</a></p>
-			<p>Телефон: <a href="tel:89231432772">+7 (923) 143-27-72</a></p>
-			<!-- <p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p> -->
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="fullscreen">
+					<div class="fullscreen__body">
+						<div class="fullscreen__logo">
+							<div class="logo _icon-logo"></div>
+						</div>
+						<div class="fullscreen__title">
+							<h2 class="subtitle-fullscreen">Зеленый тариф для дома и бизнеса</h2>
+							<h1 class="title-fullscreen">Солнечная электростанция <span>с доходом от 1000 $ в месяц</span></h1>
+							<a href="" class="btn-fullscreen _icon-arrow btn">записаться на консультацию</a>
+						</div>
+						<div class="fullscreen__social">
+							<ul class="social__link">
+								<li><a href="" class="header-social _icon-instagram"></a></li>
+								<li><a href="https://web.telegram.org/z/" class="header-social _icon-telegram"></a></li>
+								<li><a href="" class="header-social _icon-whatsapp"></a></li>
+								<li><a href="" class="header-social _icon-facebook"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="services">
+				<div class="services__container">
+					<div class="services__title">
+						<h2>Услуги</h2>
+					</div>
+
+					<div class="services__body">
+						<div class="services__offer offer-services">
+							<div class="offer-services__item">
+								<h3>Полный комплект солнечной электростанции</h3>
+								<p>74 модели солнечных панелей, 31 модель инверторов, провода с повышенной устойчивостью к
+									атмосферным условиям, качественные соединители, контроллеры зарядов и надежные гелевые
+									аккумуляторы с увеличенным сроком службы.</p>
+							</div>
+							<div class="offer-services__item">
+								<h3>Подбор оборудования с максимальной производительностью</h3>
+								<p>Подбираем солнечные панели с учетом расположения Вашего дома, количеством прямого и
+									рассеянного
+									излучения, для того, чтобы Ваша электростанция - вырабатывала максимальное количество
+									электроэнергии и окупилась как можно быстрее.</p>
+							</div>
+							<div class="offer-services__item">
+								<h3>Монтаж оборудования в соответствии с ГОСТом</h3>
+								<p>Монтаж производится в точном соответствии с ГОСТом, с учетом закона о «Зеленом тарифе» и
+									требованиями Облэнерго. При этом, мы учитываем, чтобы солнечная станция имела максимально
+									возможную производительность.</p>
+							</div>
+							<div class="offer-services__item">
+								<h3>Помощь в подключении к «Зеленому тарифу»</h3>
+								<p>Всю бюрократическую процедуру по подключению Вашей электростанции к «Зеленому тарифу», мы
+									берем
+									на себя, в том числе по увеличению договорной мощности вашего дома. При заказе солнечной
+									электростанции эта услуга абсолютно бесплатна.</p>
+							</div>
+						</div>
+						<div class="services__image">
+							<picture><source srcset="img/services/services.webp" type="image/webp"><img src="img/services/services.jpg" alt="services__image"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="tariff">
+				<div class="tariff__container">
+					<div class="tariff__title">
+						<h2>Зеленый тариф</h2>
+					</div>
+					<div class="tariff__body">
+						<div class="tariff__tabs tabs-tariff">
+							<div data-tabs class="tabs-tariff__item">
+								<nav data-tabs-titles class="tabs-tariff__navigation">
+									<button type="button" class="tabs-tariff__title _tab-active">Продажа</button>
+									<button type="button" class="tabs-tariff__title">Закрепление</button>
+									<button type="button" class="tabs-tariff__title">Ограничения</button>
+								</nav>
+								<div data-tabs-body class="tabs-tariff__content">
+									<!-- Содержание первого таба -->
+									<div class="tabs-tariff__body body-tariff">
+										<div class="body-tariff__slider">
+											<!-- Оболочка слайдера -->
+											<div class="tariff__slider swiper">
+												<!-- Двигающееся часть слайдера -->
+												<div class="tariff__wrapper swiper-wrapper">
+													<!-- Слайд -->
+													<div class="tariff__slide swiper-slide">
+														<picture><source srcset="img/tariff/small-home.webp" type="image/webp"><img src="img/tariff/small-home.jpg" alt="small-home" class="slide-img"></picture>
+														<div class="slide-info__block">
+															<div class="slide-info">[Продажа] Цена, по которой домохозяйства могут
+																продать
+																электроэнергию, более чем в 10 раз превышает цену, по которой они ее
+																покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+															<div class="slide-info__button">
+																<!-- Если нужна навигация (влево/вправо) -->
+																<button type="button" class="tariff-button-prev tariff-btn _icon-arrow"></button>
+																<button type="button" class="tariff-button-next tariff-btn _icon-arrow"></button>
+															</div>
+														</div>
+													</div>
+													<div class="tariff__slide swiper-slide">
+														<picture><source srcset="img/tariff/small-home.webp" type="image/webp"><img src="img/tariff/small-home.jpg" alt="small-home" class="slide-img"></picture>
+														<div class="slide-info__block">
+															<div class="slide-info">[Продажа] Цена, по которой домохозяйства могут
+																продать
+																электроэнергию, более чем в 10 раз превышает цену, по которой они ее
+																покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+															<div class="slide-info__button">
+																<!-- Если нужна навигация (влево/вправо) -->
+																<button type="button" class="tariff-button-prev tariff-btn _icon-arrow"></button>
+																<button type="button" class="tariff-button-next tariff-btn _icon-arrow"></button>
+															</div>
+														</div>
+													</div>
+													<div class="tariff__slide swiper-slide">
+														<picture><source srcset="img/tariff/small-home.webp" type="image/webp"><img src="img/tariff/small-home.jpg" alt="small-home" class="slide-img"></picture>
+														<div class="slide-info__block">
+															<div class="slide-info">[Продажа] Цена, по которой домохозяйства могут
+																продать
+																электроэнергию, более чем в 10 раз превышает цену, по которой они ее
+																покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+															<div class="slide-info__button">
+																<!-- Если нужна навигация (влево/вправо) -->
+																<button type="button" class="tariff-button-prev tariff-btn _icon-arrow"></button>
+																<button type="button" class="tariff-button-next tariff-btn _icon-arrow"></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="body-tariff__info info-tariff">
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Гарантия выкупа</div>
+												<div class="info-tariff__description">Гарантированный выкуп электроэнергии
+													государством - прописано в НКРЕ №447</div>
+											</div>
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Долгосрочно</div>
+												<div class="info-tariff__description">Это проект, поддерживаемый международными
+													инвестиционными организациями</div>
+											</div>
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Вид вложения</div>
+												<div class="info-tariff__description">Альтернатива банковским депозитам, окупаемость
+													- от 16% до 18% годовых</div>
+											</div>
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Высокая ставка</div>
+												<div class="info-tariff__description">Самая высокая тарифная ставка в европе - 0,16
+													евро</div>
+											</div>
+										</div>
+									</div>
+									<!-- Содержание второго таба -->
+									<div class="tabs-tariff__body body-tariff">
+										<div class="body-tariff__slider">
+											<!-- Оболочка слайдера -->
+											<div class="tariff__slider swiper">
+												<!-- Двигающееся часть слайдера -->
+												<div class="tariff__wrapper swiper-wrapper">
+													<!-- Слайд -->
+													<div class="tariff__slide swiper-slide">
+														<picture><source srcset="img/tariff/small-home.webp" type="image/webp"><img src="img/tariff/small-home.jpg" alt="small-home" class="slide-img"></picture>
+														<div class="slide-info__block">
+															<div class="slide-info">[Закрепление] Цена, по которой домохозяйства могут
+																продать
+																электроэнергию, более чем в 10 раз превышает цену, по которой они ее
+																покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+															<div class="slide-info__button">
+																<!-- Если нужна навигация (влево/вправо) -->
+																<button type="button" class="tariff-button-prev tariff-btn _icon-arrow"></button>
+																<button type="button" class="tariff-button-next tariff-btn _icon-arrow"></button>
+															</div>
+														</div>
+													</div>
+													<div class="tariff__slide swiper-slide">
+														<picture><source srcset="img/tariff/small-home.webp" type="image/webp"><img src="img/tariff/small-home.jpg" alt="small-home" class="slide-img"></picture>
+														<div class="slide-info__block">
+															<div class="slide-info">[Закрепление] Цена, по которой домохозяйства могут
+																продать
+																электроэнергию, более чем в 10 раз превышает цену, по которой они ее
+																покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+															<div class="slide-info__button">
+																<!-- Если нужна навигация (влево/вправо) -->
+																<button type="button" class="tariff-button-prev tariff-btn _icon-arrow"></button>
+																<button type="button" class="tariff-button-next tariff-btn _icon-arrow"></button>
+															</div>
+														</div>
+													</div>
+													<div class="tariff__slide swiper-slide">
+														<picture><source srcset="img/tariff/small-home.webp" type="image/webp"><img src="img/tariff/small-home.jpg" alt="small-home" class="slide-img"></picture>
+														<div class="slide-info__block">
+															<div class="slide-info">[Закрепление] Цена, по которой домохозяйства могут
+																продать
+																электроэнергию, более чем в 10 раз превышает цену, по которой они ее
+																покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+															<div class="slide-info__button">
+																<!-- Если нужна навигация (влево/вправо) -->
+																<button type="button" class="tariff-button-prev tariff-btn _icon-arrow"></button>
+																<button type="button" class="tariff-button-next tariff-btn _icon-arrow"></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="body-tariff__info info-tariff">
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Гарантия выкупа</div>
+												<div class="info-tariff__description">Гарантированный выкуп электроэнергии
+													государством - прописано в НКРЕ №447</div>
+											</div>
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Долгосрочно</div>
+												<div class="info-tariff__description">Это проект, поддерживаемый международными
+													инвестиционными организациями</div>
+											</div>
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Вид вложения</div>
+												<div class="info-tariff__description">Альтернатива банковским депозитам, окупаемость
+													- от 16% до 18% годовых</div>
+											</div>
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Высокая ставка</div>
+												<div class="info-tariff__description">Самая высокая тарифная ставка в европе - 0,16
+													евро</div>
+											</div>
+										</div>
+									</div>
+									<!-- Содержание третьего таба -->
+									<div class="tabs-tariff__body body-tariff">
+										<div class="body-tariff__slider">
+											<!-- Оболочка слайдера -->
+											<div class="tariff__slider swiper">
+												<!-- Двигающееся часть слайдера -->
+												<div class="tariff__wrapper swiper-wrapper">
+													<!-- Слайд -->
+													<div class="tariff__slide swiper-slide">
+														<picture><source srcset="img/tariff/small-home.webp" type="image/webp"><img src="img/tariff/small-home.jpg" alt="small-home" class="slide-img"></picture>
+														<div class="slide-info__block">
+															<div class="slide-info">[Ограничения] Цена, по которой домохозяйства могут
+																продать
+																электроэнергию, более чем в 10 раз превышает цену, по которой они ее
+																покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+															<div class="slide-info__button">
+																<!-- Если нужна навигация (влево/вправо) -->
+																<button type="button" class="tariff-button-prev tariff-btn _icon-arrow"></button>
+																<button type="button" class="tariff-button-next tariff-btn _icon-arrow"></button>
+															</div>
+														</div>
+													</div>
+													<div class="tariff__slide swiper-slide">
+														<picture><source srcset="img/tariff/small-home.webp" type="image/webp"><img src="img/tariff/small-home.jpg" alt="small-home" class="slide-img"></picture>
+														<div class="slide-info__block">
+															<div class="slide-info">[Ограничения] Цена, по которой домохозяйства могут
+																продать
+																электроэнергию, более чем в 10 раз превышает цену, по которой они ее
+																покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+															<div class="slide-info__button">
+																<!-- Если нужна навигация (влево/вправо) -->
+																<button type="button" class="tariff-button-prev tariff-btn _icon-arrow"></button>
+																<button type="button" class="tariff-button-next tariff-btn _icon-arrow"></button>
+															</div>
+														</div>
+													</div>
+													<div class="tariff__slide swiper-slide">
+														<picture><source srcset="img/tariff/small-home.webp" type="image/webp"><img src="img/tariff/small-home.jpg" alt="small-home" class="slide-img"></picture>
+														<div class="slide-info__block">
+															<div class="slide-info">[Ограничения] Цена, по которой домохозяйства могут
+																продать
+																электроэнергию, более чем в 10 раз превышает цену, по которой они ее
+																покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+															<div class="slide-info__button">
+																<!-- Если нужна навигация (влево/вправо) -->
+																<button type="button" class="tariff-button-prev tariff-btn _icon-arrow"></button>
+																<button type="button" class="tariff-button-next tariff-btn _icon-arrow"></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="body-tariff__info info-tariff">
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Гарантия выкупа</div>
+												<div class="info-tariff__description">Гарантированный выкуп электроэнергии
+													государством - прописано в НКРЕ №447</div>
+											</div>
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Долгосрочно</div>
+												<div class="info-tariff__description">Это проект, поддерживаемый международными
+													инвестиционными организациями</div>
+											</div>
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Вид вложения</div>
+												<div class="info-tariff__description">Альтернатива банковским депозитам, окупаемость
+													- от 16% до 18% годовых</div>
+											</div>
+											<div class="info-tariff__items">
+												<div class="info-tariff__title">Высокая ставка</div>
+												<div class="info-tariff__description">Самая высокая тарифная ставка в европе - 0,16
+													евро</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tariff__image">
+							<h3>«Зеленый тариф» — это особые тарифные условия, которые позволяют частным домохозяйствам не
+								только потреблять, но и продавать выработанное домашними солнечными электростанциями
+								электричество в электросеть общего пользования.</h3>
+							<picture><source srcset="img/tariff/big-home.webp" type="image/webp"><img src="img/tariff/big-home.jpg" alt="big-home"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="quote">
+				<div class="quote__background">
+					<div class="quote__title">«Солнечная электростанция — идеальное вложение средств в свою
+						энергонезависимость и пассивный доход»</div>
+				</div>
+			</section>
+
+			<section class="clients">
+				<div class="clients__container">
+					<div class="clients__title">
+						<h2>Наши клиенты</h2>
+					</div>
+					<!-- Оболочка слайдера -->
+					<div class="clients__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="clients__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="clients__slide slide-clients swiper-slide">
+								<div class="slide-clients__image">
+									<picture><source srcset="img/clients/clients-home.webp" type="image/webp"><img src="img/clients/clients-home.jpg" alt="clients-home"></picture>
+								</div>
+								<div class="slide-clients__info info-clients">
+									<div class="info-clients__discription discription-clients">
+										<div class="discription-clients__title">
+											<h2>Солнечная электростанция 30 кВт подключенная по Зеленому Тарифу</h2>
+										</div>
+										<div class="discription-clients__text">
+											<p>Расположение: Харьковская обл., г. Харьков</p>
+											<p>Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $</p>
+											<p>Смонтирована: апрель 2017 г</p>
+											<p>Срок службы: 25-30 лет</p>
+										</div>
+									</div>
+									<div class="info-clients__btn _icon-arrow btn">записаться на консультацию</div>
+								</div>
+							</div>
+							<div class="clients__slide slide-clients swiper-slide">
+								<div class="slide-clients__image">
+									<picture><source srcset="img/clients/clients-home.webp" type="image/webp"><img src="img/clients/clients-home.jpg" alt="clients-home"></picture>
+								</div>
+								<div class="slide-clients__info info-clients">
+									<div class="info-clients__discription discription-clients">
+										<div class="discription-clients__title">
+											<h2>Солнечная электростанция 30 кВт подключенная по Зеленому Тарифу</h2>
+										</div>
+										<div class="discription-clients__text">
+											<p>Расположение: Харьковская обл., г. Харьков</p>
+											<p>Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $</p>
+											<p>Смонтирована: апрель 2017 г</p>
+											<p>Срок службы: 25-30 лет</p>
+										</div>
+									</div>
+									<div class="info-clients__btn _icon-arrow btn">записаться на консультацию</div>
+								</div>
+							</div>
+							<div class="clients__slide slide-clients swiper-slide">
+								<div class="slide-clients__image">
+									<picture><source srcset="img/clients/clients-home.webp" type="image/webp"><img src="img/clients/clients-home.jpg" alt="clients-home"></picture>
+								</div>
+								<div class="slide-clients__info info-clients">
+									<div class="info-clients__discription discription-clients">
+										<div class="discription-clients__title">
+											<h2>Солнечная электростанция 30 кВт подключенная по Зеленому Тарифу</h2>
+										</div>
+										<div class="discription-clients__text">
+											<p>Расположение: Харьковская обл., г. Харьков</p>
+											<p>Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $</p>
+											<p>Смонтирована: апрель 2017 г</p>
+											<p>Срок службы: 25-30 лет</p>
+										</div>
+									</div>
+									<div class="info-clients__btn _icon-arrow btn">записаться на консультацию</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Если нужна навигация (влево/вправо) -->
+					<button type="button" class="clients-button-prev clients-btn _icon-arrow"></button>
+					<button type="button" class="clients-button-next clients-btn _icon-arrow"></button>
+				</div>
+			</section>
+
+			<section class="myStation">
+				<div class="myStation__container">
+					<div class="myStation__step step-myStation">
+						<div class="step-myStation__title">
+							<h2>5 шагов к собственной электростанции</h2>
+						</div>
+						<ul class="step-myStation__list">
+							<li class="step-myStation__item">
+								<span>01</span>
+								<h3>Заявка или звонок</h3>
+								<p>Оставляете заявку на нашем сайте или связываетесь с нами по телефону или в мессенджерах.</p>
+							</li>
+							<li class="step-myStation__item">
+								<span>02</span>
+								<h3>Консультация и замер на объекте</h3>
+								<p>Мы просчитываем более 10- 15 вариантов солнечной станции на Вашем участке, чтобы предложить
+									Вам один наиболее выгодный.</p>
+							</li>
+							<li class="step-myStation__item">
+								<span>03</span>
+								<h3>Заключение договора</h3>
+								<p>Заключается договор, благодаря которому, вы будете застрахованы от некачественного
+									оборудования и срыва сроков.</p>
+							</li>
+							<li class="step-myStation__item">
+								<span>04</span>
+								<h3>Монтаж СЭС</h3>
+								<p>Наши специалисты производят монтаж солнечных батарей, проводки и инверторов, при
+									необходимости изготавливают опоры.</p>
+							</li>
+							<li class="step-myStation__item">
+								<span>05</span>
+								<h3>Получение дохода от государства</h3>
+								<p>После подключения к «Зеленому тарифу», вы получаете доход за каждый киловатт, выработанный на
+									Вашей солнечной электростанции по зафиксированному тарифу на момент подключения.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="myStation__image">
+						<picture><source srcset="img/power-plant/power-plant.webp" type="image/webp"><img src="img/power-plant/power-plant.jpg" alt="power-plant"></picture>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__request request-footer">
+						<div class="request-footer__title">
+							<h2>Оставить заявку</h2>
+						</div>
+
+						<form action="#" class="request-footer__form form-footer">
+							<input type="name" placeholder="Имя" class="form-footer__name">
+							<input type="tel" placeholder="Телефон" class="form-footer__tel">
+							<button class="form-footer__btn _icon-arrow btn">Оставить заявку</button>
+						</form>
+					</div>
+
+					<div class="footer__contacts contacts-footer">
+						<div class="contacts-footer__title">
+							<h2>Контакты</h2>
+						</div>
+						<div class="contacts-footer__info info-footer">
+							<div class="info-footer__location">
+								<div class="location-moscow">
+									<h4>Центральный офис:</h4>
+									<p>г. Москва, ул,Гоголя 13, 1й этаж</p>
+								</div>
+								<div class="location-kiev">
+									<h4>Представительство в Киеве:</h4>
+									<p>г. Киев, ул. Є. Коновальця, 103 оф. 410</p>
+								</div>
+								<span>Представительства в Харькове, Одессе, Ростове, Сочи, Белгороде</span>
+							</div>
+
+							<div class="info-footer__phone">
+								<a href="#">+7 987 654-54-56</a>
+								<a href="#">+38 067 504-32-57</a>
+								<p>Ежедневно 08:00 - 20:00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__privacy">
+						<a href="">Политика конфиденциальности</a>
+					</div>
+					<div class="bottom-footer__logo _icon-logo"></div>
+					<div class="bottom-footer__social">
+						<ul class="social__link">
+							<li><a href="" class="header-social _icon-instagram"></a></li>
+							<li><a href="https://web.telegram.org/z/" class="header-social _icon-telegram"></a></li>
+							<li><a href="" class="header-social _icon-whatsapp"></a></li>
+							<li><a href="" class="header-social _icon-facebook"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
 		</div>
 	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20230328160044"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
